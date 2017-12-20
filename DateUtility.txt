@@ -1,0 +1,19 @@
+Future Date:
+
+public static Date getDateAfterDays(int days) {
+long backDateMS = System.currentTimeMillis() + ((long)days) *24*60*60*1000;
+Date backDate = new Date();
+backDate.setTime(backDateMS);
+return backDate;
+} 
+
+
+Past Date:
+
+Generating for  Past date:
+public static Date getDateBeforeDays(int days) {
+long backDateMS = System.currentTimeMillis() - ((long)days) *24*60*60*1000;
+Date backDate = new Date();
+backDate.setTime(backDateMS);
+return backDate;
+}
